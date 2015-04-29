@@ -19,3 +19,15 @@
     </div>
   </div>
 </div>
+<div>
+  <nav>
+    <ul class="pager">
+      <li class="previous">
+        <%= link_to @pin.previous do %><span aria-hidden="true">&larr;</span> Older<% end %>
+      </li>
+      <li class="next">
+        <%= link_to @pin.next do %>Newer <span aria-hidden="true">&rarr;</span><% end %>
+      </li>
+    </ul>
+  </nav>
+</div>

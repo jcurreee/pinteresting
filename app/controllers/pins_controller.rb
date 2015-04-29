@@ -8,6 +8,9 @@ class PinsController < ApplicationController
   end
 
   def show
+    @pins = Pin.find(params[:id])
+    @previous_pin = @pin.next
+    @next_pin = @pin.previous
   end
 
   def random
